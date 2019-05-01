@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../style.css" />
-    <title>Widget Youtube</title>
-  </head>
-  <body>
-    <nav className="navbar navbar-light bg-light fixed-top">
+import React, { Component } from 'react'
+
+export default class HeadingImage extends Component {
+  render() {
+    return (
+      <div>
+        <nav className="navbar navbar-light bg-light fixed-top">
       <a href="widget-list.html"><i className="fas fa-chevron-left"></i></a>
       <span className="navbar-brand mb-0 h1">Widget Edit</span>
       <a href="widget-list.html"><i className="fas fa-check"></i></a>
@@ -54,14 +38,18 @@
             className="form-control">
         </div>
         <div className="form-group">
-                <label for="width">Width</label>
-                <div className="input-group">
-                <input className="form-control"  placeholder="Image Width" type="number">
-                <div className="input-group-append">
-                  <span className="input-group-text">%</span>
-                  </div>
-                  </div>
-                  </div>
+          <label for="width">Width</label>
+          <div className="input-group">
+          <input className="form-control"  placeholder="Image Width" type="number">
+          <div className="input-group-append">
+            <span className="input-group-text">%</span>
+            </div>
+            </div>
+        <div className="form-group">
+          <label for="file">File</label>
+          <input name="file" id="file" type="file" className="form-control">
+            </div>  
+            <a href="login.html" className="btn btn-primary btn-block">Upload Image</a>
             <a href="login.html" className="btn btn-danger btn-block">Delete</a>   
           </form>
     </div>
@@ -70,5 +58,7 @@
           <a className="float-right" href="../user/profile.html"><i className="fas fa-user text-primary"></i></a>
       </div>
   </nav>
-  </body>
-</html>
+      </div>
+    )
+  }
+}
