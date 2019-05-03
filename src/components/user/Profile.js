@@ -16,10 +16,10 @@ export default class Profile extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input placeholder="Enter your Email here..." className="form-control" type="email" id="email" name="email"/>
+            <input placeholder="Enter your Email here..." className="form-control" type="email" id="email" name="email"/></div>
         <div className="form-group">
              <label htmlFor="firstName">First Name</label>
-            <input placeholder="Enter your Firstname here..." className="form-control" type="text" id="firstName" name="firstName"/>
+            <input placeholder="Enter your Firstname here..." className="form-control" type="text" id="firstName" name="firstName"/></div>
         <div className="form-group">
             <label htmlFor="lastName">Last Name</label>
             <input placeholder="Enter your Last Name here..." className="form-control" type="text" id="lastName" name="lastName"/>

@@ -6,7 +6,7 @@ import Profile from './components/user/Profile';
 import Register from './components/user/Register';
 import WebsiteList from './components/website/WebsiteList';
 import WebsiteNew from './components/website/WebsiteNew';
-class App extends Componenet{
+class App extends Component{
   
   addUser=(user)=>{
     const newUsers=this.state.users;
@@ -84,12 +84,15 @@ widgets:[
 
   return (
     <Router className="app">
+    <Switch>
  <Route exact path="/" componenet={Login}></Route>
  <Route exact path="/login" componenet={Login}></Route>
  <Route exact path="/register" componenet={Register}></Route>
  <Route exact path="/user/:uid" componenet={Profile}></Route>
- <Route exact path="/user/:uid/website" componenet={WebsiteNew}></Route>
+ <Route exact path="/user/:uid/website/new" componenet={WebsiteNew}></Route>
  <Route exact path="/user/:uid/website" componenet={WebsiteList}></Route>
+ <Route exact path="/user/:uid/website/wid" component={WebsiteEdit}></Route>
+ </Switch>
     </Router>
   );
     
