@@ -6,6 +6,7 @@ import Profile from './components/user/Profile';
 import Register from './components/user/Register';
 import WebsiteList from './components/website/WebsiteList';
 import WebsiteNew from './components/website/WebsiteNew';
+import WebsiteEdit from "./components/user"
 class App extends Component{
   
   addUser=(user)=>{

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 export default class WebsiteNew extends Component {
   render() {
     return (
-      <div>
+      <div></div>
         <nav className="navbar navbar-dark bg-primary fixed-top row">
         <div className="col-lg-4 d-none d-lg-block">
             <a className="float-left pt-2" href="website-list.html"><i className="fas fa-chevron-left"></i></a> 
@@ -39,14 +39,14 @@ export default class WebsiteNew extends Component {
                 </ul>  
             </div>
         </div>
-        <div className="col-lg-8">
+        <div className="col-lg-8"/>
             <div className="container">
                 <form>
-                    <div className="form-group">
+                    <div className="form-group"/>
                     <label for="name">Name</label> 
-                    <input placeholder="Enter website name..." className="form-control" type="text">
-                    </label>
-            </div>
+                    <input placeholder="Enter website name..." className="form-control" type="text"></input>
+                    
+        
             <div className="form-group">
                 <label for="description">Discription</label>
                 <textarea rows="5" placeholder="Enter website description..." className="form-control" id="description" name="description"></textarea>
@@ -58,8 +58,7 @@ export default class WebsiteNew extends Component {
         <nav className="navbar navbar-dark bg-primary fixed-bottom">
                 <span className="navbar-brand mb-0 h1"></span>
                 <a href="profile.html"><i className="fas fa-user"></i></a>
-              </nav>   
-      </div>
-    )
-  }
+              </nav>       
+  
+}
 }
